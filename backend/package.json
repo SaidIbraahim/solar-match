@@ -5,7 +5,8 @@
   "main": "dist/index.js",
   "scripts": {
     "dev": "ts-node-dev --respawn --transpile-only src/index.ts",
-    "build": "rimraf dist && tsc",
+    "prebuild": "npm install",
+    "build": "rm -rf dist && tsc",
     "start": "node dist/index.js",
     "seed": "ts-node -P tsconfig.json scripts/seedSupabase.ts",
     "test": "echo \"No automated tests yet\""
