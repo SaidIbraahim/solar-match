@@ -1,0 +1,88 @@
+# Dependencies
+node_modules/
+.pnp
+.pnp.*
+.yarn/*
+!.yarn/patches
+!.yarn/plugins
+!.yarn/releases
+!.yarn/versions
+
+# Build outputs
+.next/
+out/
+dist/
+build/
+.turbo/
+*.tsbuildinfo
+
+# Environment variables
+.env
+.env.local
+.env.development.local
+.env.test.local
+.env.production.local
+*.local
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+.DS_Store
+
+# Logs
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
+
+# Testing
+coverage/
+.nyc_output/
+*.lcov
+
+# Vercel
+.vercel
+
+# Sensitive files
+*.pem
+*.key
+*.cert
+secrets/
+.secrets
+
+# Scripts (exclude from git)
+backend/scripts/*.ts
+backend/scripts/*.js
+!backend/scripts/seedSupabase.ts.example
+
+# Test files
+**/*.test.ts
+**/*.test.tsx
+**/*.test.js
+**/*.test.jsx
+**/*.spec.ts
+**/*.spec.tsx
+**/*.spec.js
+**/*.spec.jsx
+__tests__/
+tests/
+test/
+
+# Documentation (exclude all .md except README.md)
+*.md
+!README.md
+
+# Temporary files
+*.tmp
+*.temp
+.cache/
+.temp/
+
+# OS files
+Thumbs.db
+.DS_Store
